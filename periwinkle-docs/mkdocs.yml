@@ -1,0 +1,78 @@
+site_name: Барвінок
+repo_name: periwinkle-lang/periwinkle
+repo_url: https://github.com/periwinkle-lang/periwinkle/
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - md_in_html
+  - attr_list
+  - admonition
+  - tables
+  - abbr
+
+
+theme: 
+  name: material
+  language: uk
+
+  icon:
+    repo: fontawesome/brands/github
+  
+  logo: img/mini-logo.svg
+  favicon: img/logo.svg
+
+  palette:
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: deep purple
+    accent: amber
+    toggle:
+      icon: material/weather-night
+      name: Світла тема
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: deep purple
+    accent: amber
+    toggle:
+      icon: material/weather-sunny
+      name: Темна тема
+
+  features:
+    - content.code.copy
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.tabs
+    - toc.follow
+
+extra_css:
+  - assets/style.css
+
+nav:
+  - Вступ: index.md
+  - Специфікація:
+    - Система типів: specification/typeSystem.md
+    - Програма: specification/program.md
+    - Коментарі: specification/comments.md
+    - Літерали: specification/literals.md
+    - Змінні: specification/variables.md
+    - Оператори: specification/operators.md
+    - Типи даних:
+      - Ніц: specification/datatype/null.md
+      - Логічний: specification/datatype/bool.md
+      - Число: specification/datatype/number.md
+      - Дійсний: specification/datatype/real.md
+      - Стрічка: specification/datatype/string.md
+      - Список: specification/datatype/list.md
+    - Умовний оператор Якщо: specification/if.md
+    - Цикл Поки: specification/while.md
+    - Функції та процедури: specification/function.md
+    - Вбудовані об'єкти: specification/builtin.md
+    - Ітератори: specification/iterators.md
+    - Цикл Кожній: specification/forEach.md
